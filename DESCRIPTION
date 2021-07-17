@@ -1,7 +1,7 @@
 Package: fasano.franceschini.test
 Title: Fasano-Franceschini Test: A 2-D Kolmogorov-Smirnov Two-Sample
         Test
-Version: 1.0.0
+Version: 1.0.1
 Authors@R: 
     c(person(given = "Elan",
            family = "Ness-Cohn",
@@ -24,9 +24,9 @@ BugReports: https://github.com/nesscoder/fasano.franceschini.test/issues
 VignetteBuilder: knitr
 Config/testthat/edition: 3
 NeedsCompilation: no
-Packaged: 2021-06-21 17:18:16 UTC; elanness-cohn
+Packaged: 2021-07-16 15:54:51 UTC; elanness-cohn
 Author: Elan Ness-Cohn [aut, cre] (<https://orcid.org/0000-0002-3935-6667>),
   Rosemary Braun [ctb, ths] (<https://orcid.org/0000-0001-9668-9866>)
 Maintainer: Elan Ness-Cohn <elanness-cohn2017@u.northwestern.edu>
 Repository: CRAN
-Date/Publication: 2021-06-22 08:00:09 UTC
+Date/Publication: 2021-07-17 04:40:06 UTC
