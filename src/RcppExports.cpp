@@ -11,42 +11,42 @@ Rcpp::Rostream<false>& Rcpp::Rcerr = Rcpp::Rcpp_cerr_get();
 #endif
 
 // ffTestStatistic
-NumericVector ffTestStatistic(const NumericMatrix S1, const NumericMatrix S2, char method);
+NumericVector ffTestStatistic(const NumericMatrix& S1, const NumericMatrix& S2, char method);
 RcppExport SEXP _fasano_franceschini_test_ffTestStatistic(SEXP S1SEXP, SEXP S2SEXP, SEXP methodSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
-    Rcpp::traits::input_parameter< const NumericMatrix >::type S1(S1SEXP);
-    Rcpp::traits::input_parameter< const NumericMatrix >::type S2(S2SEXP);
+    Rcpp::traits::input_parameter< const NumericMatrix& >::type S1(S1SEXP);
+    Rcpp::traits::input_parameter< const NumericMatrix& >::type S2(S2SEXP);
     Rcpp::traits::input_parameter< char >::type method(methodSEXP);
     rcpp_result_gen = Rcpp::wrap(ffTestStatistic(S1, S2, method));
     return rcpp_result_gen;
 END_RCPP
 }
 // permutationTestSeeded
-unsigned int permutationTestSeeded(const NumericMatrix S1, const NumericMatrix S2, int nPermute, bool verbose, int seed, char method);
-RcppExport SEXP _fasano_franceschini_test_permutationTestSeeded(SEXP S1SEXP, SEXP S2SEXP, SEXP nPermuteSEXP, SEXP verboseSEXP, SEXP seedSEXP, SEXP methodSEXP) {
+unsigned int permutationTestSeeded(const NumericMatrix& S1, const NumericMatrix& S2, int nPermute, bool verbose, char method, int seed);
+RcppExport SEXP _fasano_franceschini_test_permutationTestSeeded(SEXP S1SEXP, SEXP S2SEXP, SEXP nPermuteSEXP, SEXP verboseSEXP, SEXP methodSEXP, SEXP seedSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
-    Rcpp::traits::input_parameter< const NumericMatrix >::type S1(S1SEXP);
-    Rcpp::traits::input_parameter< const NumericMatrix >::type S2(S2SEXP);
+    Rcpp::traits::input_parameter< const NumericMatrix& >::type S1(S1SEXP);
+    Rcpp::traits::input_parameter< const NumericMatrix& >::type S2(S2SEXP);
     Rcpp::traits::input_parameter< int >::type nPermute(nPermuteSEXP);
     Rcpp::traits::input_parameter< bool >::type verbose(verboseSEXP);
-    Rcpp::traits::input_parameter< int >::type seed(seedSEXP);
     Rcpp::traits::input_parameter< char >::type method(methodSEXP);
-    rcpp_result_gen = Rcpp::wrap(permutationTestSeeded(S1, S2, nPermute, verbose, seed, method));
+    Rcpp::traits::input_parameter< int >::type seed(seedSEXP);
+    rcpp_result_gen = Rcpp::wrap(permutationTestSeeded(S1, S2, nPermute, verbose, method, seed));
     return rcpp_result_gen;
 END_RCPP
 }
 // permutationTest
-unsigned int permutationTest(const NumericMatrix S1, const NumericMatrix S2, int nPermute, bool verbose, char method);
+unsigned int permutationTest(const NumericMatrix& S1, const NumericMatrix& S2, int nPermute, bool verbose, char method);
 RcppExport SEXP _fasano_franceschini_test_permutationTest(SEXP S1SEXP, SEXP S2SEXP, SEXP nPermuteSEXP, SEXP verboseSEXP, SEXP methodSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
-    Rcpp::traits::input_parameter< const NumericMatrix >::type S1(S1SEXP);
-    Rcpp::traits::input_parameter< const NumericMatrix >::type S2(S2SEXP);
+    Rcpp::traits::input_parameter< const NumericMatrix& >::type S1(S1SEXP);
+    Rcpp::traits::input_parameter< const NumericMatrix& >::type S2(S2SEXP);
     Rcpp::traits::input_parameter< int >::type nPermute(nPermuteSEXP);
     Rcpp::traits::input_parameter< bool >::type verbose(verboseSEXP);
     Rcpp::traits::input_parameter< char >::type method(methodSEXP);
@@ -55,16 +55,31 @@ BEGIN_RCPP
 END_RCPP
 }
 // permutationTestParallel
-unsigned int permutationTestParallel(const NumericMatrix S1, const NumericMatrix S2, int nPermute, char method);
+unsigned int permutationTestParallel(const NumericMatrix& S1, const NumericMatrix& S2, int nPermute, char method);
 RcppExport SEXP _fasano_franceschini_test_permutationTestParallel(SEXP S1SEXP, SEXP S2SEXP, SEXP nPermuteSEXP, SEXP methodSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
-    Rcpp::traits::input_parameter< const NumericMatrix >::type S1(S1SEXP);
-    Rcpp::traits::input_parameter< const NumericMatrix >::type S2(S2SEXP);
+    Rcpp::traits::input_parameter< const NumericMatrix& >::type S1(S1SEXP);
+    Rcpp::traits::input_parameter< const NumericMatrix& >::type S2(S2SEXP);
     Rcpp::traits::input_parameter< int >::type nPermute(nPermuteSEXP);
     Rcpp::traits::input_parameter< char >::type method(methodSEXP);
     rcpp_result_gen = Rcpp::wrap(permutationTestParallel(S1, S2, nPermute, method));
+    return rcpp_result_gen;
+END_RCPP
+}
+// permutationTestParallelSeeded
+unsigned int permutationTestParallelSeeded(const NumericMatrix& S1, const NumericMatrix& S2, int nPermute, char method, int seed);
+RcppExport SEXP _fasano_franceschini_test_permutationTestParallelSeeded(SEXP S1SEXP, SEXP S2SEXP, SEXP nPermuteSEXP, SEXP methodSEXP, SEXP seedSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< const NumericMatrix& >::type S1(S1SEXP);
+    Rcpp::traits::input_parameter< const NumericMatrix& >::type S2(S2SEXP);
+    Rcpp::traits::input_parameter< int >::type nPermute(nPermuteSEXP);
+    Rcpp::traits::input_parameter< char >::type method(methodSEXP);
+    Rcpp::traits::input_parameter< int >::type seed(seedSEXP);
+    rcpp_result_gen = Rcpp::wrap(permutationTestParallelSeeded(S1, S2, nPermute, method, seed));
     return rcpp_result_gen;
 END_RCPP
 }
@@ -74,6 +89,7 @@ static const R_CallMethodDef CallEntries[] = {
     {"_fasano_franceschini_test_permutationTestSeeded", (DL_FUNC) &_fasano_franceschini_test_permutationTestSeeded, 6},
     {"_fasano_franceschini_test_permutationTest", (DL_FUNC) &_fasano_franceschini_test_permutationTest, 5},
     {"_fasano_franceschini_test_permutationTestParallel", (DL_FUNC) &_fasano_franceschini_test_permutationTestParallel, 4},
+    {"_fasano_franceschini_test_permutationTestParallelSeeded", (DL_FUNC) &_fasano_franceschini_test_permutationTestParallelSeeded, 5},
     {NULL, NULL, 0}
 };
 

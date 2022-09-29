@@ -9,7 +9,7 @@
 
 [![](https://img.shields.io/badge/arXiv-abs/2106.10539-yellow.svg)](https://arxiv.org/abs/2106.10539)
 [![](https://www.r-pkg.org/badges/version/fasano.franceschini.test?color=orange)](https://cran.r-project.org/package=fasano.franceschini.test)
-[![](https://img.shields.io/badge/devel%20version-2.0.1-blue.svg)](https://github.com/nesscoder/fasano.franceschini.test)
+[![](https://img.shields.io/badge/devel%20version-2.1.0-blue.svg)](https://github.com/nesscoder/fasano.franceschini.test)
 [![](http://cranlogs.r-pkg.org/badges/grand-total/fasano.franceschini.test?color=green)](https://cran.r-project.org/package=fasano.franceschini.test)
 [![R build
 status](https://github.com/nesscoder/fasano.franceschini.test/workflows/R-CMD-check/badge.svg)](https://github.com/nesscoder/fasano.franceschini.test/actions)
@@ -61,7 +61,7 @@ fasano.franceschini.test(S1, S2, seed = 0)
 #>  Fasano-Francheschini Test
 #> 
 #> data:  S1 and S2
-#> Z = 0.9815, p-value = 0.6535
+#> D = 0.9815, p-value = 0.6535
 #> 95 percent confidence interval:
 #>  0.5522616 0.7454075
 #> sample estimates:
@@ -88,7 +88,7 @@ fasano.franceschini.test(S1, S2, seed = 1)
 #>  Fasano-Francheschini Test
 #> 
 #> data:  S1 and S2
-#> Z = 1.6943, p-value = 0.0198
+#> D = 1.6943, p-value = 0.0198
 #> 95 percent confidence interval:
 #>  0.002407173 0.069705090
 #> sample estimates:
