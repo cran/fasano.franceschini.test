@@ -137,9 +137,12 @@ fasano.franceschini.test <- function(S1,
     # Validate threads
     if (threads == "auto") {
         threads <- RcppParallel::defaultNumThreads()
-    }
-    if (!is.numeric(threads) || threads < 1 || (threads %% 1 != 0)) {
+    } else if (!is.numeric(threads) || threads < 1 || (threads %% 1 != 0)) {
         stop("'threads' must be a positive integer or \"auto\"")
+    }
+    # Validate seed
+    if (!is.null(seed) && (!is.numeric(seed) || (seed %% 1 != 0))) {
+        stop("'seed' must be an integer")
     }
     # Validate verbose
     if (!is.logical(verbose)) {
@@ -152,7 +155,7 @@ fasano.franceschini.test <- function(S1,
     # Validate method
     if (missing(method)) {
         N <- max(n1, n2)
-        if ((d == 2 && N > 25) || (d == 3 && N > 150) || (d == 4 && N > 3500)) {
+        if ((d == 2 && N > 25) || (d == 3 && N > 200)) {
             method <- 'r'
         } else {
             method <- 'b'
