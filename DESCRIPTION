@@ -2,7 +2,7 @@ Type: Package
 Package: fasano.franceschini.test
 Title: Fasano-Franceschini Test: A Multidimensional Kolmogorov-Smirnov
         Two-Sample Test
-Version: 2.2.0
+Version: 2.2.1
 Authors@R: c(
     person("Connor", "Puritz", , "connorpuritz2025@u.northwestern.edu", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0001-7602-0444")),
@@ -31,11 +31,11 @@ Encoding: UTF-8
 RoxygenNote: 7.2.3
 SystemRequirements: GNU make
 NeedsCompilation: yes
-Packaged: 2023-05-08 13:33:22 UTC; connorpuritz
+Packaged: 2023-05-09 19:38:34 UTC; connorpuritz
 Author: Connor Puritz [aut, cre] (<https://orcid.org/0000-0001-7602-0444>),
   Elan Ness-Cohn [aut] (<https://orcid.org/0000-0002-3935-6667>),
   Rosemary Braun [ctb, ths] (<https://orcid.org/0000-0001-9668-9866>),
   Luca Weihs [cph] (Copyright holder and author of 'RangeTree' class.)
 Maintainer: Connor Puritz <connorpuritz2025@u.northwestern.edu>
 Repository: CRAN
-Date/Publication: 2023-05-08 13:50:02 UTC
+Date/Publication: 2023-05-11 12:00:02 UTC

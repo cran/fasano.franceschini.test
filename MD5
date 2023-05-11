@@ -1,13 +1,13 @@
-e75b699b1effc6bb3076ec663911fea2 *DESCRIPTION
+e3ac3a395f4c214f0d3b2f4cfebcf7aa *DESCRIPTION
 e922f779e4a818958e31de8da403c150 *LICENSE
 ac6ffcaff854723964169d7c12c343e8 *LICENSE.note
 e4efcff3252e0cd20ba60fa217ea6597 *NAMESPACE
-2d5e0b4635682f71d4b55f8a26eb8a56 *NEWS.md
+18b51d1b6fdd3c5969deb5a96e9446c2 *NEWS.md
 530466145761396f097d61afe764928d *R/RcppExports.R
 a2bf26f14939bfccb920c4c29dceed87 *R/fasano.franceschini.test-package.R
 86f620fdd6ffcb976a6b689e544dc608 *R/ff_function.R
 fc571143c0450b830715be015c0149e5 *R/test_functions.R
-762f3f04471b90cc6a5571d7ea0d2d06 *README.md
+21984063a5cf1fd58936a2baca6c99d1 *README.md
 ea124a494ad7922985532ad3b308e4d5 *build/partial.rdb
 141f5348fcd0c6e76580812e2e1d417f *man/fasano.franceschini.test.Rd
 8d9a95c054661549ba119662b585f338 *man/figures/logo.png
@@ -18,7 +18,7 @@ ea124a494ad7922985532ad3b308e4d5 *build/partial.rdb
 79f36854629188255f6ee607568a13b9 *src/RangeTree.h
 6817beeccc2e88d96f53d8e5ad6690ca *src/RcppExports.cpp
 4a66daa81d5c20b8a278b6d7e5e7af09 *src/distance.h
-bfd2c124b4424bccc44506e60344752c *src/ff_internal_functions.cpp
+226cd1b456e84f82b03da9cc9520d735 *src/ff_internal_functions.cpp
 f9bf3b3a96819507310e2996b7361c90 *src/matrix_util.h
 72bac5d5c13367e8c00489c10dcd5068 *tests/testthat.R
 cbb7b031f10588b67bffdd382dc370b7 *tests/testthat/test_2d_brute.R
